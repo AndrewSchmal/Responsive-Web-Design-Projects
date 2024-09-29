@@ -1,1 +1,54 @@
-HTML Content
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>All about cats!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> 
+    <h1 id="title">All about cats!</h1>
+    <p id="description">Cat Enthusiast Survey</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">
+        Please enter your name:
+        <input id="name" type="text" placeholder="John Doe" required>
+      </label>
+      <label id="email-label" for="email">
+        Enter your email:
+        <input id="email" type="email" required placeholder="johndoe@gmail.com">
+      </label>
+      <label id="number-label" for="number">
+        On a scale of 1 to 10, how much do you love cats?
+        <input id="number" min="1" max="10" type="number" placeholder="7">
+      </label>
+      <label for="dropdown">What is your favorite breed of cat?</label>
+      <select id="dropdown" name="dropdown" required>
+        <option value="">(select one)</option>
+        <option value="1">Siamese</option>
+        <option value="2">Persian</option>
+        <option value="3">Maine Coon</option>
+        <option value="4">Tabby</option>
+        <option value="5">Other</option>
+      </select>
+      <fieldset>
+        <legend>What type of cat do you prefer? (required)</legend>
+        <label for="indoor-cats">
+          <input id="indoor-cats" type="radio" name="cat-type" value="indoor" class="inline" checked> Indoor
+        </label>
+        <label for="outdoor-cats">
+          <input id="outdoor-cats" type="radio" name="cat-type" value="outdoor" class="inline"> Outdoor
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have a cat? (Select all that apply)</legend>
+        <label><input type="checkbox" name="has-cat" value="yes"> Yes</label>
+        <label><input type="checkbox" name="has-cat" value="no"> No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Is there anything else you would like to say?</legend>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="I'm convinced my cat is an alien..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
