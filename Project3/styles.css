@@ -1,1 +1,10 @@
-CSS content
+@media (max-width: 600px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #main-doc {
+        margin-left: 0;
+    }
+}
